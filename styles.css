@@ -7,10 +7,10 @@
   font-style: normal;
 }
 
-header{
+/* .nav-bar, .banner{
   max-width: 1440;
   margin: 0 auto;
-}
+} */
 /* shared-styels */
 .display-flex{
   display: flex;
@@ -107,9 +107,80 @@ color: rgba(93, 88, 239, 1);
   background-color: black;
 }
 .banner-image{
+
 }
 
+/* curriculum section */
+.curriculum-section{
+  background-image: url(assets/bg.png);
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 140px;
+  gap: 20px;
+}
+.curriculum-title{
+  text-align: center;
+  font-size: 2.8rem;
+  
 
+}
+.kin-der{
+max-width: 367px;
+justify-items: center;
+text-align: center;
+background-image: linear-gradient(rgba(222, 245, 255, 1), white);
+padding: 30px;
+border-radius: 10px;
+box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05) inset;
+/* box-shadow: 5px 10px 20px red inset; */
+
+}
+.elemen-tary{
+max-width: 367px;
+justify-items: center;
+text-align: center;
+background-image: linear-gradient(rgba(255, 244, 220, 1), white);
+padding: 30px;
+border-radius: 10px;
+box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05) inset;
+}
+.mi-ddle{
+max-width: 367px;
+justify-items: center;
+text-align: center;
+background-image: linear-gradient(rgba(242, 232, 255, 1), white);
+padding: 30px;
+border-radius: 10px;
+box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05) inset;
+}
+/* shared style for curriculum section */
+.h-3{
+font-size: 1.5rem;
+font-weight: bold;
+color: rgba(32, 32, 32, 1);
+}
+.h-p{
+font-size: 1rem;
+font-weight: 400;
+color: rgba(128, 128, 128, 1);
+}
+/* read more button */
+.re-ad{
+  font-size: 1rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+  margin-top: 10px;
+}
+.re-1{
+  color: rgba(100, 200, 255, 1);
+}
+.re-2{
+color: rgba(240, 170, 0, 1);
+}
+.re-3{
+color: rgba(135, 0, 255, 1);
+}
 /* responsive media query */
 @media screen and (max-width: 576px){
   .heading-name, .nav-link, .nav-button{
@@ -120,13 +191,22 @@ color: rgba(93, 88, 239, 1);
   }
   .nav-bar{
     justify-content: space-between;
-    margin: 1rem;
+    margin: 10px;
     background-color: #05D4DF;
     padding: 5px;
   }
   .banner{
     flex-direction: column-reverse;
     text-align: center;
+    margin: 10px;
+  }
+  .banner-image{
+
+  }
+  .curriculum-section{
+    flex-direction: column;
+    margin: 10px;
+
   }
  
 
