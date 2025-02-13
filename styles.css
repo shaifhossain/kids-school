@@ -181,9 +181,141 @@ color: rgba(240, 170, 0, 1);
 .re-3{
 color: rgba(135, 0, 255, 1);
 }
+
+/* arrow-section */
+.arrow-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.arrow-designe{
+    width: 50px;
+    height: 50px;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* our story section */
+
+
+.story-heading{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:1rem;
+  /* position:relative; */
+  
+}
+.our-story{
+ padding: 3rem;
+ background:url(assets/bg.png), linear-gradient(to bottom, white, rgba(255, 211, 134, 1));
+ justify-items: center;
+  /* background-image: url(assets/bg.png); */
+
+}
+.container h3{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+} 
+.container p{
+font-size: 1rem;
+color: rgba(102, 102, 102, 1);
+padding: 1rem;
+}
+  .story-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+}
+.story-card img {
+  width: 100%;
+  height: auto;
+  position: ;
+} 
+.story-date {
+  font-size: 0.8rem;
+  padding: 0.8rem 2rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-left: 2rem;
+  /* position: absolute; */
+}
+#first-box{
+ grid-column: span 2;
+ grid-row: span 2;
+}
+.view-all {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+
+  
+}
+.view-all:hover {
+  background-color: #0056b3;
+}
+.box-card{
+  /* position: relative; */
+}
+
+
+/* footer-section */
+.footer-section{
+  background-color: rgba(1, 172, 253, 1);
+   color: white;
+   display: flex;
+   justify-content: space-around;
+   padding-top: 3rem;
+   padding-bottom: 5rem;
+}
+.first-sec{
+ 
+}
+.first-sec img{
+  background-color: white;
+  border-radius: 5px;
+ margin-left: 0;
+}
+.about-list{
+ list-style: none;
+ padding: 0; 
+}
+.panda-logo{
+}
+.kids-education{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+
+
+
 /* responsive media query */
 @media screen and (max-width: 576px){
-  .heading-name, .nav-link, .nav-button{
+  .heading-name, .nav-link, .nav-button, .story-big, .arrow-section{
     display: none;
   }
   .hamburger-menu {
@@ -200,15 +332,41 @@ color: rgba(135, 0, 255, 1);
     text-align: center;
     margin: 10px;
   }
-  .banner-image{
-
-  }
   .curriculum-section{
     flex-direction: column;
     margin: 10px;
 
   }
- 
+  .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:.3rem;
+  
+  
+}
+.our-story{
+ padding: .3rem;
+
+}
+.story-date {
+  font-size: 0.6rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-left: .3rem;
+}
+.container h3{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+.footer-section{
+  flex-direction: column;
+  padding-left: 10px;
+}
 
     
   }
